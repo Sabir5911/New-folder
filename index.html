@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First web page</title>
+
+    <style>
+        body{
+background-color: wheat;
+
+font-size: 20px;
+        }
+      #h{
+        color:black ;
+        font-style: unset;
+        text-align: center;
+        
+      }
+      p{
+        color:black;
+      }
+      p>b{
+        background-color:whitesmoke;
+      }
+      fieldset>legend>h1{
+ color: aquamarine;   
+}
+    </style>
+</head>
+
+<body >
+    <h1 id="h"><b>Registration Form</b> </h1>
+  
+
+    <h1>Personal Details</h1>
+
+    <form action="http://www.exampel.com/login.php" method="post">
+        <p>
+            <b>First Name</b>
+            <input type="text" name="text" size="10" max="31" required>
+
+            <b>Last name</b>
+            <input type="text" name="text" size="10" max="31" required>
+        </P>
+        <p>
+            <b>Contact Number</b>
+            <input type="number" name="number" placeholder="03310001" required>
+        </p>
+        <p>
+            <b>Email Address</b>
+            <input type="email" name="Email" required>
+        </p>
+
+        <p>
+            <b>Gender:</b>
+            <label> <input type="radio" name="gender" value="m" required /><i>Male</i> </label>
+            <label> <input type="radio" name="gender" value="f" required /><i>Female</i></label>
+        </p>
+        <p>
+            <b>Date of Birth</b>
+            <input type="date" name="date of birth" required />
+
+        </p>
+        <hr>
+
+        <p>
+        <h1> Security</h1>
+        Password
+        <input type="password" name="Password" required>
+        </p>
+        <p>
+            Retype your password
+            <input type="password" value="password" required>
+        </p>
+        <hr>
+        <p>
+        <h1>Upload your picture </h1>
+        </p>
+        <input type="file" name="dp" required />
+        <br />
+        <br />
+      
+
+        <p>
+        <fieldset>
+            <legend>
+                <h1>Payment Option </h1>
+            </legend>
+            <select>
+                <option>Easy Paisa</option>
+                <option>Jazz Cash</option>
+                <option>Bank</option>
+            </select>
+            <br />
+            <br />
+            
+          
+            </p>
+            <hr>
+            <P>
+            <h1> Subsmit Application</h1>
+            </P>
+            <input type="image" src="d.gif" value="submit" width="100" />
+        </fieldset>
+
+    </form>
+
+
+</body>
+
+</html>
